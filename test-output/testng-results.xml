@@ -1,40 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-03T15:01:22 EST" name="Default suite" finished-at="2023-01-03T15:01:27 EST" duration-ms="5058">
+  <suite started-at="2023-03-20T02:03:44 EDT" name="Andromeda" finished-at="2023-03-20T02:03:46 EDT" duration-ms="1458">
     <groups>
     </groups>
-    <test started-at="2023-01-03T15:01:22 EST" name="Default test" finished-at="2023-01-03T15:01:27 EST" duration-ms="5058">
+    <test started-at="2023-03-20T02:03:44 EDT" name="Banking Test" finished-at="2023-03-20T02:03:46 EDT" duration-ms="1458">
       <class name="com.qa.testCases.TestBanking">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.qa.testCases.TestBanking@799f10e1]" started-at="2023-01-03T15:01:21 EST" name="setupSuite" finished-at="2023-01-03T15:01:22 EST" duration-ms="540" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.qa.testCases.TestBanking@145f66e3]" started-at="2023-03-20T02:03:44 EDT" name="setupSuite" finished-at="2023-03-20T02:03:44 EDT" duration-ms="534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCases.TestBanking@799f10e1]" started-at="2023-01-03T15:01:22 EST" name="setUp" finished-at="2023-01-03T15:01:24 EST" duration-ms="2405" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testCases.TestBanking@145f66e3]" started-at="2023-03-20T02:03:44 EDT" name="setUp" finished-at="2023-03-20T02:03:46 EDT" duration-ms="1423" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 109
+Current browser version is 111.0.5563.65 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'BOOK-P0O1IG8UK3', ip: '192.168.0.30'
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 109
+Current browser version is 111.0.5563.65 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'BOOK-P0O1IG8UK3', ip: '192.168.0.30'
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+at com.qa.utilities.BrowserFactory.openApplication(BrowserFactory.java:25)
+at com.qa.pages.BaseClass.setUp(BaseClass.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="openBankSite()[pri:1, instance:com.qa.testCases.TestBanking@799f10e1]" started-at="2023-01-03T15:01:24 EST" name="openBankSite" finished-at="2023-01-03T15:01:25 EST" duration-ms="1152" status="PASS">
+        <test-method signature="openBankSite()[pri:1, instance:com.qa.testCases.TestBanking@145f66e3]" started-at="2023-03-20T02:03:46 EDT" name="openBankSite" finished-at="2023-03-20T02:03:46 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 109
+Current browser version is 111.0.5563.65 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'BOOK-P0O1IG8UK3', ip: '192.168.0.30'
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 109
+Current browser version is 111.0.5563.65 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'BOOK-P0O1IG8UK3', ip: '192.168.0.30'
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+at com.qa.utilities.BrowserFactory.openApplication(BrowserFactory.java:25)
+at com.qa.pages.BaseClass.setUp(BaseClass.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBankSite -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.qa.testCases.TestBanking@799f10e1]" started-at="2023-01-03T15:01:25 EST" name="tearDownMethod" finished-at="2023-01-03T15:01:26 EST" duration-ms="205" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=openBankSite status=SUCCESS method=TestBanking.openBankSite()[pri:1, instance:com.qa.testCases.TestBanking@799f10e1] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.qa.testCases.TestBanking@145f66e3]" started-at="2023-03-20T02:03:46 EDT" name="tearDownMethod" finished-at="2023-03-20T02:03:46 EDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCases.TestBanking@799f10e1]" started-at="2023-01-03T15:01:26 EST" name="tearDown" finished-at="2023-01-03T15:01:27 EST" duration-ms="1268" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testCases.TestBanking@145f66e3]" started-at="2023-03-20T02:03:46 EDT" name="tearDown" finished-at="2023-03-20T02:03:46 EDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testCases.TestBanking -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Banking Test -->
+  </suite> <!-- Andromeda -->
 </testng-results>

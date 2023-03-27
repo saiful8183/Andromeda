@@ -18,7 +18,7 @@ public class Helper {
 	public String captureScreen(WebDriver driver) { 
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); 
 		//File dest = new File("./Screenshot/Bank.png"); // For screenshot
-		File dest = new File("./Screenshot/Bank_"+getCurrentTime()+".png"); //Foe Curent date
+		File dest = new File("./Screenshot/Bank_"+getCurrentTime()+".png"); //For Curent date
 		//Converting relative path to absolute path 
 		String fullPath = dest.getAbsolutePath(); 
 		try { 

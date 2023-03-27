@@ -19,7 +19,9 @@ public class BrowserFactory {
 		if(browser.equalsIgnoreCase("chrome")) 
 		{ 
 		System.setProperty("webdriver.chrome.driver", 
-				".//Driver//chromedriver.exe"); 
+		"C:\\Users\\Saiful Chowdhury\\eclipse-workspace\\Andromeda\\Driver\\chromedriver.exe");                                                    
+
+
 		driver = new ChromeDriver(); 
 
  
@@ -28,7 +30,7 @@ public class BrowserFactory {
 	
 	else if(browser.equalsIgnoreCase("firefox")) 
 	{ 
-	System.setProperty("webdriver.gecko.driver", 
+	System.setProperty("webdriver.geckodriver.driver", 
 			".//Driver//geckodriver.exe"); 
 	driver = new FirefoxDriver(); 
 

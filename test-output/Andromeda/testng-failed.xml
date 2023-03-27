@@ -5,10 +5,10 @@
     <classes>
       <class name="com.qa.testCases.TestBanking">
         <methods>
-          <include name="logout"/>
           <include name="tearDown"/>
           <include name="tearDownMethod"/>
           <include name="setupSuite"/>
+          <include name="openBankSite"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.qa.testCases.TestBanking -->
